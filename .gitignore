@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+data/raw/*
+!data/raw/.gitkeep
+dist/
+web/projeto.zip
+web/relatorio.pdf
+*.tar.gz
+.DS_Store
+data/processed/amostra_capital_2016.csv
+reports/split_membership.csv
+reports/test_predictions.csv

@@ -1,0 +1,211 @@
+{
+  "selected": "MLP A",
+  "input_dimension": 18,
+  "features": [
+    "regiao",
+    "contexto"
+  ],
+  "categories": {
+    "regiao": [
+      "Centro",
+      "Itaquera",
+      "Leste",
+      "Norte",
+      "Oeste",
+      "Santo Amaro",
+      "Sul",
+      "São Mateus"
+    ],
+    "contexto": [
+      "Banco ou caixa eletrônico",
+      "Carga",
+      "Comércio",
+      "Ensino",
+      "Interior de veículo",
+      "Outros",
+      "Residência",
+      "Transeunte",
+      "Transporte coletivo",
+      "Veículo"
+    ]
+  },
+  "configs": [
+    {
+      "name": "MLP A",
+      "hidden_layers": [
+        16
+      ],
+      "alpha": 0.0001,
+      "best_epoch": 48,
+      "epochs_run": 60,
+      "parameters": 321,
+      "seconds": 1.031,
+      "validation": {
+        "accuracy": 0.7213333333333334,
+        "precision_macro": 0.7230508470012669,
+        "recall_macro": 0.7209252606084635,
+        "f1_macro": 0.7205384203957925,
+        "log_loss": 0.5472125828975597
+      },
+      "training": {
+        "accuracy": 0.725,
+        "precision_macro": 0.7264367996294324,
+        "recall_macro": 0.7246255373800936,
+        "f1_macro": 0.7243303759796117,
+        "log_loss": 0.5415674341440849
+      }
+    },
+    {
+      "name": "MLP B",
+      "hidden_layers": [
+        32,
+        16
+      ],
+      "alpha": 0.0001,
+      "best_epoch": 46,
+      "epochs_run": 58,
+      "parameters": 1153,
+      "seconds": 1.376,
+      "validation": {
+        "accuracy": 0.719,
+        "precision_macro": 0.7198275862068966,
+        "recall_macro": 0.7187044271325268,
+        "f1_macro": 0.7185421305926675,
+        "log_loss": 0.5474564689919978
+      },
+      "training": {
+        "accuracy": 0.7250714285714286,
+        "precision_macro": 0.7258498916780599,
+        "recall_macro": 0.7247872333325558,
+        "f1_macro": 0.7246541602139671,
+        "log_loss": 0.5412069841800876
+      }
+    },
+    {
+      "name": "MLP C",
+      "hidden_layers": [
+        64,
+        32,
+        16
+      ],
+      "alpha": 0.01,
+      "best_epoch": 30,
+      "epochs_run": 42,
+      "parameters": 3841,
+      "seconds": 1.427,
+      "validation": {
+        "accuracy": 0.722,
+        "precision_macro": 0.7261051399716103,
+        "recall_macro": 0.7213897399404666,
+        "f1_macro": 0.7203563165718501,
+        "log_loss": 0.5480069401591781
+      },
+      "training": {
+        "accuracy": 0.7244285714285714,
+        "precision_macro": 0.728459871014955,
+        "recall_macro": 0.7238237417988415,
+        "f1_macro": 0.722839707630067,
+        "log_loss": 0.541956384511866
+      }
+    }
+  ],
+  "test": {
+    "accuracy": 0.7166666666666667,
+    "precision_macro": 0.7180901484427207,
+    "recall_macro": 0.716287134455877,
+    "f1_macro": 0.7159565580618212,
+    "log_loss": 0.5477195412222677
+  },
+  "confusion_matrix": [
+    [
+      1150,
+      363
+    ],
+    [
+      487,
+      1000
+    ]
+  ],
+  "per_class_test": {
+    "Furto": {
+      "precision": 0.7025045815516188,
+      "recall": 0.760079312623926,
+      "f1-score": 0.7301587301587301,
+      "support": 1513.0
+    },
+    "Roubo": {
+      "precision": 0.7336757153338225,
+      "recall": 0.6724949562878278,
+      "f1-score": 0.7017543859649122,
+      "support": 1487.0
+    },
+    "accuracy": 0.7166666666666667,
+    "macro avg": {
+      "precision": 0.7180901484427207,
+      "recall": 0.716287134455877,
+      "f1-score": 0.7159565580618212,
+      "support": 3000.0
+    },
+    "weighted avg": {
+      "precision": 0.7179550735296644,
+      "recall": 0.7166666666666667,
+      "f1-score": 0.7160796435533276,
+      "support": 3000.0
+    }
+  },
+  "baseline": {
+    "strategy": "most_frequent",
+    "validation": {
+      "accuracy": 0.5043333333333333,
+      "precision_macro": 0.25216666666666665,
+      "recall_macro": 0.5,
+      "f1_macro": 0.3352537115001108,
+      "log_loss": 17.8656375298724
+    },
+    "test": {
+      "accuracy": 0.5043333333333333,
+      "precision_macro": 0.25216666666666665,
+      "recall_macro": 0.5,
+      "f1_macro": 0.3352537115001108,
+      "log_loss": 17.8656375298724
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 14000,
+      "class_counts": {
+        "0": 7061,
+        "1": 6939
+      }
+    },
+    "validation": {
+      "rows": 3000,
+      "class_counts": {
+        "0": 1513,
+        "1": 1487
+      }
+    },
+    "test": {
+      "rows": 3000,
+      "class_counts": {
+        "0": 1513,
+        "1": 1487
+      }
+    }
+  },
+  "training_config": {
+    "activation": "relu",
+    "output": "logistic/sigmoid",
+    "loss": "binary_crossentropy",
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "max_epochs": 80,
+    "patience": 12,
+    "min_delta": 0.0001,
+    "seed": 42,
+    "threshold": 0.5,
+    "checkpoint": "minimum validation log_loss",
+    "architecture_selection": "maximum validation macro F1"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source": "https://www.kaggle.com/datasets/inquisitivecrow/crime-data-in-brazil",
+  "download": "https://www.kaggle.com/api/v1/datasets/download/inquisitivecrow/crime-data-in-brazil/BO_2016.csv",
+  "file": "BO_2016.csv",
+  "year": 2016,
+  "raw_sha256": "b2cf889131c62ab29e33a9fc10fd3b65dac46526ef1b82d150f60f1522fc334c",
+  "raw_rows": 774662,
+  "geography": "DECAP + oito seccionais de circunscrição da capital",
+  "features": [
+    "regiao",
+    "contexto"
+  ],
+  "seed": 42,
+  "capital_rows": 510586,
+  "valid_key_rows": 510586,
+  "capital_unique_bulletins": 503686,
+  "bulletins_multiple_natures_excluded": 3975,
+  "binary_consumated_rows": 406879,
+  "label_proxy_rows_excluded": 709,
+  "bulletins_conflicting_features_excluded": 2390,
+  "duplicate_rows_collapsed": 68,
+  "eligible_unique_bulletins": 401304,
+  "eligible_class_counts": {
+    "0": 202394,
+    "1": 198910
+  },
+  "sample_rows": 20000,
+  "sample_class_counts": {
+    "0": 10087,
+    "1": 9913
+  },
+  "missing_context_sample": 0
+}
