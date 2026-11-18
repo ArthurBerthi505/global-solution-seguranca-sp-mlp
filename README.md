@@ -10,7 +10,7 @@ Global Solution da disciplina **Aprendizado Profundo com Redes Neurais Convoluci
 
 Repositório: **https://github.com/ArthurBerthi505/global-solution-seguranca-sp-mlp**
 
-Aplicação: **https://seguranca-sp-mlp-gs568017.tiledtoffee16.chatgpt.site**
+Aplicação: **https://seguranca-sp-mlp.vercel.app**
 
 O modelo classifica o tipo de uma ocorrência já registrada ou hipotética. **Ele não prevê se um crime acontecerá, não mede risco de uma região e não faz enquadramento jurídico.** O projeto utiliza registros reais, três MLPs efetivamente treinadas e resultados de teste reservados para o modelo escolhido na validação.
 
