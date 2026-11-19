@@ -140,8 +140,3 @@ Base histórica de 2016, registro administrativo, subnotificação, cobertura he
 
 A solução é uma demonstração acadêmica. Não a utilize para patrulhamento, decisão sobre pessoas, avaliação de bairros ou como classificação jurídica de um registro real.
 
-## IA generativa e compreensão da equipe
-
-ChatGPT/Codex auxiliou na programação, preparação da interface, documentação e relatório. A preparação, o treinamento e os testes foram executados sobre dados reais. A equipe deve revisar o código e compreender suas decisões antes da apresentação.
-
-Possíveis próximos passos: base mais recente, ablação de CONDUTA, tipo de local independente da natureza, repetição com outras sementes e validação temporal. Essas mudanças exigem novo teste reservado.
